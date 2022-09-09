@@ -260,15 +260,14 @@ extension MainViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
-            return nil
+            let userAnnotation = mapView.dequeueReusableAnnotationView(withIdentifier: "Car")
+                ?? MKAnnotationView(annotation: annotation, reuseIdentifier: "Car")
+            userAnnotation.image = UIImage(systemName: "car")
+            return userAnnotation
         } else {
             let mapAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "TrackingAnnotationView") ?? TrackingAnnotationView(annotation: annotation, reuseIdentifier: "TrackingAnnotationView")
             mapAnnotationView.annotation = annotation
             mapAnnotationView.canShowCallout = true
-
-//            let mapAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "AnnotationView") ?? MKAnnotationView(annotation: annotation, reuseIdentifier: "AnnotationView")
-//            mapAnnotationView.canShowCallout = true
-//            mapAnnotationView.image = UIImage(systemName:"gear")
             return mapAnnotationView
         }
     }
@@ -283,7 +282,12 @@ extension MainViewController: MKMapViewDelegate {
 
 extension MainViewController: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        manager.startUpdatingLocation()
+        if manager.authorizationStatus == .authorizedWhenInUse {
+            manager.startUpdatingLocation()
+            manager.startUpdatingHeading()
+        } else {
+            print("User did not authorize use of location.")
+        }
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -295,6 +299,7 @@ extension MainViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         print("Heading Updated")
+        manager.stopUpdatingHeading()
     }
     
 }

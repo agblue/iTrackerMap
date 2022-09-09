@@ -84,7 +84,6 @@ extension DetailViewController: UITableViewDataSource {
     }
 }
 
-
 class TrackingCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
