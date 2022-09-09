@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F5AA99AC28CADE13008B9CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99AB28CADE13008B9CF4 /* AppDelegate.swift */; };
 		F5AA99AE28CADE13008B9CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99AD28CADE13008B9CF4 /* SceneDelegate.swift */; };
-		F5AA99B028CADE13008B9CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99AF28CADE13008B9CF4 /* ViewController.swift */; };
-		F5AA99B328CADE13008B9CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AA99B128CADE13008B9CF4 /* Main.storyboard */; };
 		F5AA99B528CADE16008B9CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AA99B428CADE16008B9CF4 /* Assets.xcassets */; };
 		F5AA99B828CADE16008B9CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AA99B628CADE16008B9CF4 /* LaunchScreen.storyboard */; };
+		F5AA99C028CADE97008B9CF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99BF28CADE97008B9CF4 /* MainViewController.swift */; };
+		F5AA99C228CB035E008B9CF4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99C128CB035E008B9CF4 /* DetailViewController.swift */; };
+		F5AA99C428CB1E02008B9CF4 /* TrackingAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99C328CB1E02008B9CF4 /* TrackingAnnotation.swift */; };
+		F5AA99C628CB1E63008B9CF4 /* TrackingAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99C528CB1E63008B9CF4 /* TrackingAnnotationView.swift */; };
+		F5AA99C828CB1E96008B9CF4 /* TrackingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA99C728CB1E96008B9CF4 /* TrackingLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5AA99A828CADE13008B9CF4 /* iTrackerMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTrackerMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AA99AB28CADE13008B9CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5AA99AD28CADE13008B9CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5AA99AF28CADE13008B9CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5AA99B228CADE13008B9CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5AA99B428CADE16008B9CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5AA99B728CADE16008B9CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5AA99B928CADE16008B9CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5AA99BF28CADE97008B9CF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F5AA99C128CB035E008B9CF4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5AA99C328CB1E02008B9CF4 /* TrackingAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAnnotation.swift; sourceTree = "<group>"; };
+		F5AA99C528CB1E63008B9CF4 /* TrackingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingAnnotationView.swift; sourceTree = "<group>"; };
+		F5AA99C728CB1E96008B9CF4 /* TrackingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,11 @@
 			children = (
 				F5AA99AB28CADE13008B9CF4 /* AppDelegate.swift */,
 				F5AA99AD28CADE13008B9CF4 /* SceneDelegate.swift */,
-				F5AA99AF28CADE13008B9CF4 /* ViewController.swift */,
-				F5AA99B128CADE13008B9CF4 /* Main.storyboard */,
+				F5AA99C128CB035E008B9CF4 /* DetailViewController.swift */,
+				F5AA99BF28CADE97008B9CF4 /* MainViewController.swift */,
+				F5AA99C328CB1E02008B9CF4 /* TrackingAnnotation.swift */,
+				F5AA99C528CB1E63008B9CF4 /* TrackingAnnotationView.swift */,
+				F5AA99C728CB1E96008B9CF4 /* TrackingLog.swift */,
 				F5AA99B428CADE16008B9CF4 /* Assets.xcassets */,
 				F5AA99B628CADE16008B9CF4 /* LaunchScreen.storyboard */,
 				F5AA99B928CADE16008B9CF4 /* Info.plist */,
@@ -127,7 +136,6 @@
 			files = (
 				F5AA99B828CADE16008B9CF4 /* LaunchScreen.storyboard in Resources */,
 				F5AA99B528CADE16008B9CF4 /* Assets.xcassets in Resources */,
-				F5AA99B328CADE13008B9CF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +146,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AA99B028CADE13008B9CF4 /* ViewController.swift in Sources */,
+				F5AA99C428CB1E02008B9CF4 /* TrackingAnnotation.swift in Sources */,
+				F5AA99C028CADE97008B9CF4 /* MainViewController.swift in Sources */,
+				F5AA99C628CB1E63008B9CF4 /* TrackingAnnotationView.swift in Sources */,
 				F5AA99AC28CADE13008B9CF4 /* AppDelegate.swift in Sources */,
 				F5AA99AE28CADE13008B9CF4 /* SceneDelegate.swift in Sources */,
+				F5AA99C228CB035E008B9CF4 /* DetailViewController.swift in Sources */,
+				F5AA99C828CB1E96008B9CF4 /* TrackingLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5AA99B128CADE13008B9CF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5AA99B228CADE13008B9CF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5AA99B628CADE16008B9CF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,9 +294,8 @@
 				DEVELOPMENT_TEAM = PY3CD6QTY5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iTrackerMap/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "iTracker needs to show your location on the map.";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,9 +321,8 @@
 				DEVELOPMENT_TEAM = PY3CD6QTY5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iTrackerMap/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "iTracker needs to show your location on the map.";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
