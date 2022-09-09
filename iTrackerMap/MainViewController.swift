@@ -80,7 +80,7 @@ class MainViewController: UIViewController {
     }
 
     private func setupView() {
-        title = "iTracking Map"
+        title = "iTracker Map"
         view.backgroundColor = .white
 
         coreLocationManager.requestWhenInUseAuthorization()
@@ -215,7 +215,7 @@ class MainViewController: UIViewController {
             let newTrackPoint = TrackPoint(latitude: currentCoordinate.latitude, longitude: currentCoordinate.longitude, timestamp: timeStamp, title: title, subTitle: "Ping", address: address)
             self.trackingLog.log.append(newTrackPoint)
 
-            let annotation = TrackingAnnotation(coordinate: currentCoordinate, title: title, subTitle: address)
+            let annotation = TrackingAnnotation(coordinate: currentCoordinate, title: title, subtitle: address)
             self.mapView.addAnnotation(annotation)
 
             self.saveLog()
